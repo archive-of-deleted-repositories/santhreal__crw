@@ -57,8 +57,8 @@ Connect to [fastcrw.com](https://fastcrw.com) or any remote CRW instance:
 ```bash
 # Cloud server
 claude mcp add \
-  -e CRW_API_URL=https://fastcrw.com/api \
-  -e CRW_API_KEY=fc-xxx \
+  -e CRW_API_URL=https://api.fastcrw.com \
+  -e CRW_API_KEY=crw_live_xxx \
   crw -- crw-mcp
 
 # Local crw-server on custom port
@@ -217,7 +217,7 @@ command = "crw-mcp"
     "crw": {
       "command": "crw-mcp",
       "env": {
-        "CRW_API_URL": "https://fastcrw.com/api",
+        "CRW_API_URL": "https://api.fastcrw.com",
         "CRW_API_KEY": "***REMOVED***"
       }
     }
